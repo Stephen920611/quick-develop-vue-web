@@ -1,0 +1,300 @@
+@keyframes changDeg{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.dashboard-editor-container {
+    //width: 100%;
+    //height: calc(100vh - 60Px);
+    transform-origin: 0 0;
+    width: 1920Px;
+    height: 1020Px;
+
+    /*----------------------------- 雷管及炸药用量趋势图 -------------------------------*/
+    .local-car-content {
+        position: absolute;
+        left: 45Px;
+        top: 90Px;
+    }
+
+    /*----------------------------- 总数量 -------------------------------*/
+    .all-waybill-num {
+        position: absolute;
+        height: 104Px;
+        display: flex;
+        .all-waybill-num-image {
+            background-repeat: no-repeat;
+            width: 126Px;
+            height: 104Px;
+            margin-right: 6Px;
+        }
+        .all-waybill-num-content {
+            height: 120Px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 15Px 10Px;
+            border-radius: 3px;
+            border: solid 1px #3987e2;
+            //opacity: 0.52;
+            width: 200Px;
+            text-align: center;
+            -webkit-box-shadow:0Px 0Px 9Px 3Px #3987e2 inset;
+            -moz-box-shadow:0Px 0Px 9Px 3Px #3987e2 inset;
+            box-shadow:0Px 0Px 9Px 3Px #3987e2 inset;
+            span:nth-child(1) {
+                font-size: 18Px;
+                color: #fff;
+            }
+            span:nth-child(2) {
+                font-size: 44Px;
+                font-weight: bold;
+                color: #48acf0;
+            }
+
+        }
+    }
+
+    .all-waybill-num2 {
+        position: absolute;
+        height: 104Px;
+        display: flex;
+        .all-waybill-num-image {
+            background-repeat: no-repeat;
+            width: 126Px;
+            height: 104Px;
+            margin-right: 6Px;
+        }
+        .all-waybill-num-content {
+            height: 120Px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 15Px 10Px;
+            border-radius: 3px;
+            border: solid 1px #3987e2;
+            //opacity: 0.52;
+            width: 200Px;
+            text-align: center;
+            -webkit-box-shadow:0Px 0Px 9Px 3Px #3987e2 inset;
+            -moz-box-shadow:0Px 0Px 9Px 3Px #3987e2 inset;
+            box-shadow:0Px 0Px 9Px 3Px #3987e2 inset;
+            span:nth-child(1) {
+                font-size: 18Px;
+                color: #fff;
+            }
+            span:nth-child(2) {
+                font-size: 44Px;
+                font-weight: bold;
+                color: #48f05c;
+            }
+
+        }
+    }
+
+    /*----------------------------- 矿山用电量趋势图 -------------------------------*/
+    .local-car-content13{
+        position: absolute;
+        left: 1245Px;
+        top: 90Px;
+    }
+
+    /*----------------------------- 运单排名数据 -------------------------------*/
+    .waybill-rank-content {
+        position: absolute;
+        left: 45Px;
+        top: 570Px;
+    }
+
+    /*----------------------------- 炸药用量类型占比图 -------------------------------*/
+    .transport-medium-content {
+        position: absolute;
+        //left: 45Px;
+        //top: 800Px;
+        left: 45Px;
+        top: 400Px;
+    }
+
+    /*----------------------------- 雷管用量类型占比图 -------------------------------*/
+    .transport-medium-content2 {
+        position: absolute;
+        //left: 45Px;
+        //top: 800Px;
+        left: 510Px;
+        top: 400Px;
+    }
+
+    /*----------------------------- 前10矿山用量占比图 -------------------------------*/
+
+    .transport-company-content {
+        position: absolute;
+        left: 978Px;
+        top: 400Px;
+    }
+
+    /*----------------------------- 作业数量趋势图 -------------------------------*/
+    .local-car-content24{
+        position: absolute;
+        left: 1445Px;
+        top: 400Px;
+    }
+
+    /*----------------------------- 最新作业申报信息 -------------------------------*/
+    .loading-content31 {
+        left: 45Px;
+        top: 750Px;
+        position: absolute;
+        .loading-content-item {
+            padding: 0 20Px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 450Px;
+            height: 32Px;
+            font-size: 15Px;
+            //background-color: #072e70;
+            //border: solid 2Px #074796;
+            //margin-bottom: 17Px;
+            color: #fff;
+            line-height: 32px;
+            /*div:nth-child(1) {
+                color: #10bacb;
+            }*/
+            background-color: #1d233d;
+            div:nth-child(1) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .loading-content-item:nth-child(2n){
+            background-color: #1a2037;
+        }
+    }
+
+    /*----------------------------- 最新爆破作业信息 -------------------------------*/
+    .loading-content32 {
+        left: 510Px;
+        top: 750Px;
+        position: absolute;
+        .loading-content-item {
+            padding: 0 20Px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 450Px;
+            height: 32Px;
+            font-size: 15Px;
+            background-color: #072e70;
+            //border: solid 2Px #074796;
+            //margin-bottom: 17Px;
+            color: #fff;
+            line-height: 32px;
+            /*div:nth-child(1) {
+                color: #10bacb;
+            }*/
+            background-color: #1d233d;
+            div:nth-child(1) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .loading-content-item:nth-child(2n){
+            background-color: #1a2037;
+        }
+    }
+
+    /*----------------------------- 最新风险预警 -------------------------------*/
+    .loading-content33 {
+        left: 978Px;
+        top: 750Px;
+        position: absolute;
+        .loading-content-item {
+            padding: 0 20Px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 450Px;
+            height: 32Px;
+            font-size: 15Px;
+            background-color: #072e70;
+            //border: solid 2Px #074796;
+            //margin-bottom: 17Px;
+            color: #fff;
+            line-height: 32px;
+            /*div:nth-child(1) {
+                color: #10bacb;
+            }*/
+            background-color: #1d233d;
+            div:nth-child(1) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .loading-content-item:nth-child(2n){
+            background-color: #1a2037;
+        }
+    }
+
+    /*----------------------------- 最新领用与退库信息 -------------------------------*/
+    .loading-content34 {
+        left: 1445Px;
+        top: 750Px;
+        position: absolute;
+        .loading-content-item {
+            padding: 0 20Px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 450Px;
+            height: 32Px;
+            font-size: 15Px;
+            background-color: #072e70;
+            //border: solid 2Px #074796;
+            //margin-bottom: 17Px;
+            color: #fff;
+            line-height: 32px;
+            /*div:nth-child(1) {
+                color: #10bacb;
+            }*/
+            background-color: #1d233d;
+            div:nth-child(1) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .loading-content-item:nth-child(2n){
+            background-color: #1a2037;
+        }
+    }
+
+
+    /*----------------------------- 装卸告警 -------------------------------*/
+    .loading-content {
+        left: 1454Px;
+        top: 686Px;
+        position: absolute;
+        .loading-content-item {
+            padding: 8Px 20Px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 450Px;
+            height: 82Px;
+            font-size: 15Px;
+            background-color: #072e70;
+            border: solid 2Px #074796;
+            margin-bottom: 17Px;
+            color: #fff;
+            div:nth-child(1) {
+                color: #10bacb;
+            }
+            div:nth-child(2) {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

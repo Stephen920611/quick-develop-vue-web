@@ -1,0 +1,128 @@
+.search-tree {
+    .search-tree-input {
+        margin-bottom: 15px;
+    }
+    /deep/ .el-tree-node__label {
+        font-size: 14px
+    }
+
+}
+
+//列表样式
+.list-main {
+    /*border: 1px solid #ebebeb;*/
+    padding: 0;
+    margin-left: 10px;
+}
+
+//内容样式
+.el-card {
+    border: 0;
+    /deep/ .el-table th {
+        background-color: #308FE4;
+        color: #fff;
+    }
+}
+
+.table-card {
+    height: calc(100% - 55px);
+    /deep/ .el-card__body {
+        height: 100%;
+    }
+}
+
+.el-card.is-always-shadow {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.05);
+}
+
+//搜索条件样式
+.form-inline-search {
+    .form-inline-search-item {
+        width: 100%;
+        /deep/ .el-form-item__content {
+            width: calc(100% - 130px);
+        }
+    }
+    .el-radio.is-bordered + .el-radio.is-bordered {
+        margin-left: 0;
+    }
+    .el-radio:after {
+        clear: both;
+        content: '';
+    }
+    .el-form-item {
+        margin-bottom: 12px;
+    }
+    /deep/ .filter-item {
+        margin-bottom: 0 !important;
+    }
+
+    /deep/ .el-form-item__label {
+        width: 120px;
+    }
+    .form-btns{
+        text-align: right;
+    }
+    .el-button--medium{
+        padding: 9px 10px ;
+    }
+
+}
+
+.el-select {
+    width: 100%;
+}
+
+.filter-container {
+    padding-bottom: 0;
+}
+
+.iconfont {
+    font-size: 20px;
+}
+
+//样式重新修改
+.aside-box-card {
+    width: 100%;
+    height: 100%;
+}
+
+//弹窗
+/deep/ .el-dialog__body {
+    padding: 0;
+}
+
+.el-dialog__body_content {
+    padding: 20px 60px 20px 20px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+
+.dialog-container {
+    height: 100vh;
+    overflow: hidden;
+    /deep/ .el-dialog {
+        height: calc(100% - 30vh) !important;
+        .el-dialog__body {
+            height: calc(100% - 45px);
+            width: 100%;
+        }
+    }
+}
+.pagination-container{
+    margin-top: 20px;
+}
+
+//table 斑马纹
+/*
+/deep/.el-table--striped .el-table__body tr.el-table__row--striped td{
+    background-color: #d9d9d9 !important;
+}
+*/
+
+.btn-info{
+    color: #0F6FDE;
+    cursor: pointer;
+}

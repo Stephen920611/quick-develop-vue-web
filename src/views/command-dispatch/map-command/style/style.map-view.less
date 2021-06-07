@@ -1,0 +1,323 @@
+.map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container {
+    height: calc(100vh - 60px);
+    /*padding: 5px;*/
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.left-container{
+    height: 100%;
+    float: left;
+    .title-wrap{
+        height: 35px;
+        line-height: 35px;
+        padding: 0 10px;
+        background-color:#4996dc;
+        color: #fff;
+    }
+}
+.map-container {
+    height: 100%;
+    /*padding: 5px;*/
+}
+
+.lt-btn-wrapper {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 999;
+}
+
+.rt-btn-wrapper {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 999;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.marker-label {
+    cursor: default !important;
+    //background: url('../image/tip_num.png') no-repeat;
+    background-size: 75% 100%;
+    height: 18px;
+    margin: -25px 0 0 15px !important;
+    width: 42px;
+    padding-left: 10px;
+    line-height: 18px;
+}
+
+
+::v-deep.rightPanel {
+    max-width: 380px !important;
+    padding: 0;
+    &.left{
+        left: -760px !important;
+    }
+    .handle-button.left{
+        left: 380px !important;
+    }
+
+    .rightPanel-items {
+        height: 100%;
+    }
+}
+
+::v-deep .el-dialog__wrapper {
+    z-index: 60000 !important;
+}
+
+
+/*危化信息统计窗口*/
+.statistic-container{
+    position: absolute;
+    left: 26%;
+    top: 0;
+    width: 48%;
+    height: 195px;
+    &.alarm{
+        height: 160px;
+    }
+    ::v-deep .dv-border-svg-container{
+        background-color: #252525a6;
+    }
+    .close-panel{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: #8AAAFB;
+        cursor: pointer;
+        &:hover{
+            color: #fff;
+        }
+    }
+    .cards{
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        width: calc(100% - 40px);
+        .card-footer-item {
+            padding: 5px 10px 0 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            width: calc(25% - 15px);
+            display: inline-block;
+            float: left;
+            margin-right: 15px;
+            color: #1294fb;
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                background-color: #676f82a6;
+            }
+            .left-item{
+                display: inline-block;
+                float: left;
+                margin-right: 10px;
+                span.icon{
+                    color: #50a6ff;
+                }
+                span.alarm{
+                    color: #ff282c;
+                }
+            }
+            .footer-title {
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #5dd2bc;
+                &.alarm{
+                    color: #ff282c;
+                }
+            }
+            .footer-detail {
+                color: #1294fb;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                font-size: 18px;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                .dv-digital-flop {
+                    width: 100%;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.statistic-container-mini{
+    position: absolute;
+    top: 0;
+    left: 72.2%;
+    background-color: #252525a6;
+}
+.color-yellow{
+    color: #D8D945;
+}
+.color-light-green{
+    color: #1FCAD1;
+}
+.color-red{
+    color: #ff282c;
+}
+
+/*图层控制*/
+.fade-enter-active, .fade-leave-active {
+    transition: all .7s
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0
+}
+.layer-wrapper{
+    position: absolute;
+    left: 5px;
+    bottom: 30px;
+    width: 150px;
+    height: 300px;
+    background-color: #081832;
+    color: #fff;
+    font-size: 14px;
+    border: solid 2px #5d8afc;
+    ::v-deep .el-card__header{
+        padding: 15px;
+        border-bottom: solid 1px #5d8afc;
+    }
+    ::v-deep .el-card__body{
+        padding: 10px;
+    }
+    .layer{
+        .disabled{
+            color: #a8a9a9;
+        }
+    }
+}
+.fa{
+    cursor: pointer;
+    &:hover{
+        color: #1a5ca5;
+    }
+}
+/*实时报警*/
+.real-alarm-wrapper{
+    position: absolute;
+    left: 160px;
+    bottom: 30px;
+    width: 500px;
+    height: 300px;
+    background-color: #081832;
+    color: #fff;
+    font-size: 12px;
+    border: solid 2px #5d8afc;
+    ::v-deep .el-card__header{
+        border-bottom: solid 1px #5d8afc;
+    }
+    ::v-deep .header-item{
+        font-size: 16px !important;
+        text-align: center;
+    }
+    ::v-deep .row-item{
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px !important;
+        .ceil:last-child{
+            color: #0F6FDE;
+            text-decoration:underline;
+            cursor: pointer;
+        }
+    }
+}
+.min-wrapper{
+    height: 45px;
+}
+
+/*右侧按钮的背景区域*/
+.right-btn-group-background{
+    position: absolute;
+    top:50px;
+    right: 35px;
+    width: 90px;
+    height: 260Px;
+    background-color: #3d3c3f;
+    border-radius: 6px;
+    opacity: 0.66;
+}
+/*聚合图标数量显示*/
+/deep/ .marker-label{
+    cursor: default !important;
+    background: url("../image/tip_num.png") no-repeat;
+    background-size: 75% 100%;
+    height: 18px;
+    margin: -25px 0 0 15px !important;
+    width: 42px;
+    padding-left: 10px;
+    line-height: 18px;
+}
+/deep/ .marker-label-cameras32{
+    cursor: default !important;
+    background: url("../image/tip_num.png") no-repeat;
+    background-size: 75% 100%;
+    height: 18px;
+    margin: -25px 0 0 15px !important;
+    width: 42px;
+    padding-left: 10px;
+    line-height: 18px;
+}
+/deep/ .marker-label-zy_organ32{
+    cursor: default !important;
+    background: url("../image/organ-tip-num.png") no-repeat;
+    background-size: 75% 100%;
+    height: 18px;
+    margin: -28px 0 0 13px !important;
+    width: 42px;
+    padding-left: 5px;
+    line-height: 18px;
+}
+/deep/ .marker-label-zy_cameras32{
+    cursor: default !important;
+    background: url("../image/cameras-tip-num.png") no-repeat;
+    background-size: 75% 100%;
+    height: 18px;
+    margin: -30px 0 0 12px !important;
+    width: 42px;
+    padding-left: 8px;
+    line-height: 20px;
+}
+/deep/ .marker-label-zy_cameras16{
+    cursor: default !important;
+    background: url("../image/cameras-tip-num16.png") no-repeat;
+    background-size: 100% 100%;
+    height: 17px;
+    margin: -23px 0 0 9px !important;
+    width: 26px;
+    padding-left: 8px;
+    line-height: 20px;
+}
+/deep/ .unit-label{
+    display: none;
+}
+.my-badge {
+    color: #fff;
+    background: #99a9bf;
+    padding: 3px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 20px;
+    text-align: center;
+}
+.hide-badge{
+    display: none;
+}

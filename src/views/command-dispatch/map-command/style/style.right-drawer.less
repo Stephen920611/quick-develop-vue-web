@@ -1,0 +1,84 @@
+.drawer-container {
+    width: 100%;
+    height: 100%;
+
+    .take-up {
+        position: absolute;
+        left: 6px;
+        top: 5px;
+        border-radius: 7px 0 0 7px;
+        width: 32px;
+        height: 50px;
+        border: 1px solid #ccc;
+        background: #fff;
+        text-align: center;
+        font-size: 20px;
+        line-height: 50px;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .detail-box {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        z-index: 9999;
+        background-color: #0e2c54;
+    }
+    .modal-mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 666;
+        background-color: #000;
+        opacity: .3;
+    }
+    .tabs-container {
+        height: 100%;
+        .el-tab-pane {
+            height: 100%
+        }
+    }
+    .el-tabs--left {
+        .el-tabs__header.is-left {
+            //padding-top: 60px;
+            height: 100%;
+            margin-right: 0;
+            min-width: 45px;
+            .el-tabs__nav-scroll {
+                margin: 0 !important;
+            }
+            .el-tabs__item {
+                text-align: right;
+                writing-mode: vertical-rl;
+                height: auto;
+                padding: 20px 0 !important;
+                font-size: 15px;
+                background-color: #035ad0;
+                border-radius: 3px;
+                color: #fff;
+                margin: 5px 0;
+                border: none;
+                &.is-active{
+                    background-image: linear-gradient(87deg,
+                    #035ad0 0%,
+                    #31c6c4 100%),
+                    linear-gradient(
+                            #035ad0,
+                            #035ad0);
+                    background-blend-mode: normal, normal;
+                }
+            }
+        }
+        .el-tabs__content {
+            height: 100%;
+        }
+        &.el-tabs--card{
+            .el-tabs__nav{
+                border: none;
+            }
+        }
+    }
+}
+

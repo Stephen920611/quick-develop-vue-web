@@ -1,0 +1,152 @@
+
+//表格样式
+.assemble-content {
+    height: calc(100% - 115px);
+    position: relative;
+    overflow: hidden;
+    .assemble-content-item {
+        display: flex;
+        margin-top: 13px;
+        /*justify-content: space-between;*/
+        /*align-items: center;*/
+        .assemble-content-item-content {
+            width: 24%;
+            height: 220px;
+            border: 1px solid #E2E5EA;
+            border-radius: 5px;
+            padding: 15px ;
+            font-size: 14px;
+            //float: left;
+            margin-right: 1%;
+            margin-bottom: 5px;
+            position: relative;
+            //文件名
+            .assemble-content-item-content-main{
+                width: 100%;
+                height: calc(100% - 80px);
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .assemble-content-item-name-tag{
+                position: absolute;
+                right:0;
+                top:10px;
+                border-radius: 7px 0 0 7px;
+            }
+
+
+
+            //图片
+            .assemble-item-content-image{
+                width: 100px;
+                height: 100px;
+                //background-color: #4AB7BD;
+                //margin-top:20px;
+
+                .assemble-item-image{
+                    width: 100px;
+                    height: 100px;
+                    background-color: #247b54;
+                    border-radius: 20px;
+                    text-align: center;
+                    padding: 5px;
+                    /deep/.el-image{
+                        width: 90px;
+                        height: 90px;
+                    }
+
+                }
+
+            }
+            .assemble-item-content-main{
+                width: calc(100% - 110px);
+                height: 100%;
+                //padding-top:20px;
+
+                .assemble-content-item-des{
+                    //display: flex;
+                    //justify-content: space-between;
+                    line-height: 25px;
+                    div{
+                        //display: inline-block;
+                        float: left;
+                    }
+                    .assemble-content-item-des-label{
+                        //width: 82px;
+                    }
+                    .assemble-content-item-des-value{
+                        max-width: calc(100% - 90px);
+                    }
+                }
+                .assemble-content-item-des::after{
+                    clear: both;
+                    content: '';
+                }
+
+            }
+
+
+            .assemble-content-item-name {
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 10px;
+                width: calc(100% - 54px);
+                height: 22px;
+                line-height: 22px;
+            }
+            .assemble-content-item-points {
+                line-height: 25px;
+                height: 25px;
+                span {
+                    color: #3B93E5;
+                    font-weight: bold;
+                }
+            }
+            .assemble-content-item-update-time {
+                line-height: 20px;
+                height: 20px;
+            }
+            .assemble-content-item-notice {
+                margin-top: 10px;
+                li {
+                    float: left;
+                    i {
+                        cursor: pointer;
+                    }
+                    margin-right: 10px;
+                }
+                li:nth-child(4) {
+                    margin-right: 0;
+                }
+                span{
+                    font-size: 15px;
+                }
+            }
+            :global {
+                .el-divider--horizontal {
+                    margin: 6px 0;
+                }
+            }
+        }
+        .cm-haq-list-item-content:nth-child(3n) {
+            margin-right: 0;
+        }
+    }
+}
+
+.isSuccess{
+    color: #67c23a;
+}
+.isError{
+    color: #f56c6c;
+}
+/deep/.el-dialog__body_content{
+    padding: 20px 40px;
+    overflow: hidden !important;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+

@@ -1,0 +1,32 @@
+$maincolor:#2779ef;
+/deep/.el-tabs{
+    width: 100%;
+}
+/deep/.el-tabs__item{
+    height: 38px;
+    line-height: 38px;
+}
+/deep/.el-tabs__content{
+    overflow: visible;
+}
+
+/deep/.el-tabs__item.is-active{
+    color:#ffffff;
+    background-color: #2779ef;
+}
+/deep/.el-tabs--card>.el-tabs__header .el-tabs__item.is-active{
+    border-bottom-color:#2779ef
+}
+/deep/.el-tabs--card>.el-tabs__header .el-tabs__nav{
+    border-radius: 4px;
+}
+
+/deep/.el-tabs--card>.el-tabs__header{
+    border-bottom: 1px solid #ffffff;
+}
+/deep/.el-tabs--card>.el-tabs__header .el-tabs__item{
+    border-bottom: 1px solid #dfe4ed;
+
+}
+
+
